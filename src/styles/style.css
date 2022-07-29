@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: auto;
+  width: 50%;
+  outline: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  /* position: relative; */
+  background-color: #fff;
+  overflow-x: hidden;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  padding: 5px 5px;
+}
+
+nav .judul a {
+  width: 100%;
+  color: black;
+}
+
+/* main {
+  max-width: 65%;
+  padding: 10px 10px 70px;
+  position: relative;
+}
+
+main p {
+  padding: 5px 0;
+} */
+.card-input {
+  width: 100%;
+}
+
+.head-content {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-content .search {
+  width: 40%;
+  height: 10px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid rgb(109, 41, 255);
+}
+::-webkit-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+.input-form {
+  margin-top: 15px;
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid rgb(109, 41, 255);
+}
+.input-form input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+textarea::-webkit-input-placeholder {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+.input-textarea {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid rgb(109, 41, 255);
+}
+textarea {
+  width: 100%;
+  height: 160px;
+}
+hr {
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+.btn-form {
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.input-button {
+  width: 100%;
+  color: #fff;
+  height: 30px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+
+  background-color: #2a6ffc;
+}
+
+.bottom-nav {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #2a6ffc;
+  position: fixed;
+  width: 50%;
+  bottom: 0;
+}
+
+.bottom-link-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-nav a {
+  color: #2a6ffc;
+  cursor: pointer;
+}
+.limit {
+  float: left;
+
+  color: red;
+}
+.clear {
+  clear: both;
+}
+
+.bottom-nav a svg {
+  width: 30px;
+}
+
+@media screen and (min-width: 760px) {
+  .bottom-nav {
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    bottom: 5%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottom-link-nav {
+    position: relative;
+    width: 200px;
+  }
+  .row {
+    width: 60%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 48px;
+  }
+  .list-note {
+    width: 100%;
+    position: relative;
+    max-height: 250px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+  .card-note {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 5px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 5px;
+  }
+  .card-note .card-head {
+    display: flex;
+
+    width: 100%;
+    height: 35px;
+    justify-content: space-between;
+  }
+  .card-head h2 {
+    margin: 10;
+    overflow-x: hidden;
+    max-width: 150px;
+    font-size: 15px;
+  }
+  .card-note .card-body {
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .card-note .card-footer {
+    margin-top: 10px;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .btn-danger {
+    background-color: rgba(241, 59, 52, 0.981);
+    color: white;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .btn-second {
+    background-color: rgba(255, 255, 255, 0.981);
+    color: black;
+    width: 100%;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+  }
+}
